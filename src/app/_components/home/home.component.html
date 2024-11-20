@@ -1,0 +1,738 @@
+<div class="main-content">
+    <h2>Welcome to Mappls Drive</h2>
+    <div class="dropdown-container">
+        <!-- Type Dropdown -->
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="material-symbols-outlined">draft</span>
+                Type
+            </button>
+            <ul class="dropdown-menu">
+                <li><button class="dropdown-item" type="button"><span class="material-symbols-outlined">article</span> Documents</button></li>
+                <li><button class="dropdown-item" type="button"><span class="material-symbols-outlined">format_list_bulleted</span> Forms</button></li>
+                <li><button class="dropdown-item" type="button"><span class="material-symbols-outlined">picture_as_pdf</span> PDFs</button></li>
+                <li><button class="dropdown-item" type="button"><span class="material-symbols-outlined">image</span> Photos & images</button></li>
+                <li><button class="dropdown-item" type="button"><span class="material-symbols-outlined">folder</span> Folders</button></li>
+                <li><button class="dropdown-item" type="button"><span class="material-symbols-outlined">movie</span> Videos</button></li>
+            </ul>
+        </div>
+
+        <!-- People Dropdown -->
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="material-symbols-outlined">person</span>
+                People
+            </button>
+            <ul class="dropdown-menu">
+                <li><div class="dropdown-item"><strong>Anshu</strong><br><small class="text-muted">anshu&#64;123.gmail.com</small></div></li>
+                <li><div class="dropdown-item"><strong>Dhruv</strong><br><small class="text-muted">dhruv&#64;abc.com</small></div></li>
+                <li><div class="dropdown-item"><strong>Sachin</strong><br><small class="text-muted">sachin&#64;abc123.com</small></div></li>
+            </ul>
+        </div>
+
+        <!-- Modified Dropdown -->
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="material-symbols-outlined">calendar_today</span>
+                Modified
+            </button>
+            <ul class="dropdown-menu">
+                <li><button class="dropdown-item" type="button">Today</button></li>
+                <li><button class="dropdown-item" type="button">Last 7 days</button></li>
+                <li><button class="dropdown-item" type="button">Last 30 days</button></li>
+                <li><button class="dropdown-item" type="button">This year (2024)</button></li>
+                <li><button class="dropdown-item" type="button">Last year (2023)</button></li>
+                <li><button class="dropdown-item" type="button">Custom date range > </button></li>
+                <li class="divider"></li>
+                <div class="dropdown-menu-buttons">
+                    <button class="dropdown-item" type="button">Clear all</button>
+                    <button class="dropdown-item" type="button">Cancel</button>
+                    <button class="dropdown-item" type="button">Apply</button>
+                </div>
+            </ul>
+        </div>
+
+        <!-- Location Dropdown -->
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="material-symbols-outlined">folder</span>
+                Location
+            </button>
+            <ul class="dropdown-menu">
+                <li><button class="dropdown-item" type="button"><span class="material-symbols-outlined">home</span> Anywhere in Drive</button></li>
+                <li><button class="dropdown-item" type="button"><span class="material-symbols-outlined">folder</span> My Drive</button></li>
+                <li><button class="dropdown-item" type="button"><span class="material-symbols-outlined">group</span> Shared with me</button></li>
+                <li><button class="dropdown-item" type="button"><span class="material-symbols-outlined">star</span> Starred</button></li>
+                <li><button class="dropdown-item" type="button"><span class="material-symbols-outlined">delete</span> Trashed</button></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="middle-content">
+    <h1>Suggested folders</h1>
+    <div class="card-container">
+        <div class="card">
+            <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="material-symbols-outlined">folder_shared</span>
+                <div class="text-content">
+                    <div class="logo-text1">Logo</div>
+                    <div class="text1">In Shared with me</div>
+                </div>
+                <div class="dropdown">
+                    <a class="more_arrow" data-bs-toggle="dropdown" aria-expanded="false" title="View Details">
+                        <span class="material-icons-outlined pointer">more_vert</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#open_with"
+                                title="Edit Application">
+                                <span class="material-icons-outlined">open_with</span>
+                                Open with
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#download">
+                                <span class="material-icons-outlined">download</span>
+                                Download
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#share">
+                                <span class="material-icons-outlined">share</span>
+                                Share
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                <span class="material-icons-outlined">folder_open</span>
+                                Organize
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                <span class="material-icons-outlined">info</span>
+                                Folder Information
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                <span class="material-icons-outlined">delete</span>
+                                Remove
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                <span class="material-icons-outlined">report</span>
+                                Report or block
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                <span class="material-icons-outlined">thumb_down</span>
+                                Not a helpful suggestion
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </button>
+        </div>
+        <div class="card">
+            <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="material-symbols-outlined">folder_shared</span>
+                <div class="text-content">
+                    <div class="logo-text1">Logo</div>
+                    <div class="text1">In Shared with me</div>
+                </div>
+                <div class="dropdown">
+                    <a class="more_arrow" data-bs-toggle="dropdown" aria-expanded="false" title="View Details">
+                        <span class="material-icons-outlined pointer">more_vert</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#open_with"
+                                title="Edit Application">
+                                <span class="material-icons-outlined">open_with</span>
+                                Open with
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#download">
+                                <span class="material-icons-outlined">download</span>
+                                Download
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#share">
+                                <span class="material-icons-outlined">share</span>
+                                Share
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                <span class="material-icons-outlined">folder_open</span>
+                                Organize
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                <span class="material-icons-outlined">info</span>
+                                Folder Information
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                <span class="material-icons-outlined">delete</span>
+                                Remove
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                <span class="material-icons-outlined">report</span>
+                                Report or block
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                <span class="material-icons-outlined">thumb_down</span>
+                                Not a helpful suggestion
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </button>
+        </div>
+        <div class="card">
+            <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="material-symbols-outlined">folder_shared</span>
+                <div class="text-content">
+                    <div class="logo-text1">Logo</div>
+                    <div class="text1">In Shared with me</div>
+                </div>
+                <div class="dropdown">
+                    <a class="more_arrow" data-bs-toggle="dropdown" aria-expanded="false" title="View Details">
+                        <span class="material-icons-outlined pointer">more_vert</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#open_with"
+                                title="Edit Application">
+                                <span class="material-icons-outlined">open_with</span>
+                                Open with
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#download">
+                                <span class="material-icons-outlined">download</span>
+                                Download
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#share">
+                                <span class="material-icons-outlined">share</span>
+                                Share
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                <span class="material-icons-outlined">folder_open</span>
+                                Organize
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                <span class="material-icons-outlined">info</span>
+                                Folder Information
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                <span class="material-icons-outlined">delete</span>
+                                Remove
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                <span class="material-icons-outlined">report</span>
+                                Report or block
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                <span class="material-icons-outlined">thumb_down</span>
+                                Not a helpful suggestion
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="bottom-content">
+    <div class="bottom">
+        <h1>Suggested files</h1>
+        <div class="btn-group">
+            <a class="btn btn-primary active" aria-current="page">
+                <span class="material-symbols-outlined">check</span>
+                <span class="material-symbols-outlined">list</span>
+            </a>
+            <a class="btn btn-primary" aria-current="page">
+                <span class="material-symbols-outlined">check</span>
+                <span class="material-symbols-outlined">grid_view</span>
+            </a>
+        </div>
+    </div>
+    <br>
+    <div class="table-content">
+        <table class="table_section">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Reason Suggested</th>
+                    <th>Owner</th>
+                    <th>Location</th>
+                </tr>
+                <tr class="divider"></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span class="material-symbols-outlined">news</span>
+                        Admin console
+                    </td>
+                    <td>You opened</td>
+                    <td>Sachin saini</td>
+                    <td>
+                        <span class="material-symbols-outlined">group</span>
+                        Shared with me
+                    </td>
+                    <td>
+                        <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="dropdown">
+                                <a class="more_arrow" data-bs-toggle="dropdown" aria-expanded="false" title="View Details">
+                                    <span class="material-icons-outlined pointer">more_vert</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#open_with"
+                                            title="Edit Application">
+                                            <span class="material-icons-outlined">open_with</span>
+                                            Open with
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#download">
+                                            <span class="material-icons-outlined">download</span>
+                                            Download
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#share">
+                                            <span class="material-icons-outlined">share</span>
+                                            Share
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                            <span class="material-icons-outlined">folder_open</span>
+                                            Organize
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                            <span class="material-icons-outlined">info</span>
+                                            Folder Information
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                            <span class="material-icons-outlined">delete</span>
+                                            Remove
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                            <span class="material-icons-outlined">report</span>
+                                            Report or block
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                            <span class="material-icons-outlined">thumb_down</span>
+                                            Not a helpful suggestion
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </button>
+                    </td>
+                </tr>
+                <tr class="divider"></tr>
+                <tr>
+                    <td>
+                        <span class="material-symbols-outlined">add_notes</span>
+                        Auth 2.0
+                    </td>
+                    <td>You edited</td>
+                    <td>Dhruv</td>
+                    <td>
+                        <span class="material-symbols-outlined">group</span>
+                        Shared with me
+                    </td>
+                    <td>
+                        <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="dropdown">
+                                <a class="more_arrow" data-bs-toggle="dropdown" aria-expanded="false" title="View Details">
+                                    <span class="material-icons-outlined pointer">more_vert</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#open_with"
+                                            title="Edit Application">
+                                            <span class="material-icons-outlined">open_with</span>
+                                            Open with
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#download">
+                                            <span class="material-icons-outlined">download</span>
+                                            Download
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#share">
+                                            <span class="material-icons-outlined">share</span>
+                                            Share
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                            <span class="material-icons-outlined">folder_open</span>
+                                            Organize
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                            <span class="material-icons-outlined">info</span>
+                                            Folder Information
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                            <span class="material-icons-outlined">delete</span>
+                                            Remove
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                            <span class="material-icons-outlined">report</span>
+                                            Report or block
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                            <span class="material-icons-outlined">thumb_down</span>
+                                            Not a helpful suggestion
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </button>
+                    </td>
+                </tr>
+                <tr class="divider"></tr>
+                <tr>
+                    <td>
+                        <span class="material-symbols-outlined">apk_document</span>
+                        Brillian HTML & CSS.apk</td>
+                    <td>You open</td>
+                    <td>me</td>
+                    <td>
+                        <span class="material-symbols-outlined">storage</span>
+                        My Drive
+                    </td>
+                    <td>
+                        <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="dropdown">
+                                <a class="more_arrow" data-bs-toggle="dropdown" aria-expanded="false" title="View Details">
+                                    <span class="material-icons-outlined pointer">more_vert</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#open_with"
+                                            title="Edit Application">
+                                            <span class="material-icons-outlined">open_with</span>
+                                            Open with
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#download">
+                                            <span class="material-icons-outlined">download</span>
+                                            Download
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#share">
+                                            <span class="material-icons-outlined">share</span>
+                                            Share
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                            <span class="material-icons-outlined">folder_open</span>
+                                            Organize
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                            <span class="material-icons-outlined">info</span>
+                                            Folder Information
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                            <span class="material-icons-outlined">delete</span>
+                                            Remove
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                            <span class="material-icons-outlined">report</span>
+                                            Report or block
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                            <span class="material-icons-outlined">thumb_down</span>
+                                            Not a helpful suggestion
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </button>
+                    </td>
+                </tr>
+                <tr class="divider"></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="bottom-content">
+    <div class="bottom">
+        <h1>Suggested files</h1>
+        <div class="btn-group">
+            <a class="btn btn-primary active" aria-current="page">
+                <span class="material-symbols-outlined">check</span>
+                <span class="material-symbols-outlined">list</span>
+            </a>
+            <a class="btn btn-primary" aria-current="page">
+                <span class="material-symbols-outlined">check</span>
+                <span class="material-symbols-outlined">grid_view</span>
+            </a>
+        </div>
+    </div>
+    <br>
+    <div class="bottom-card">
+        <div class="bottom-card-content">
+            <button class="btn btn-secondary1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="material-symbols-outlined">news</span>
+                <div class="card-title">admin console</div>
+                <div class="dropdown">
+                    <a class="more_arrow" data-bs-toggle="dropdown" aria-expanded="false" title="View Details">
+                        <span class="material-icons-outlined pointer">more_vert</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#open_with"
+                                title="Edit Application">
+                                <span class="material-icons-outlined">open_with</span>
+                                Open with
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#download">
+                                <span class="material-icons-outlined">download</span>
+                                Download
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#share">
+                                <span class="material-icons-outlined">share</span>
+                                Share
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                <span class="material-icons-outlined">folder_open</span>
+                                Organize
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                <span class="material-icons-outlined">info</span>
+                                Folder Information
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                <span class="material-icons-outlined">delete</span>
+                                Remove
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                <span class="material-icons-outlined">report</span>
+                                Report or block
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                <span class="material-icons-outlined">thumb_down</span>
+                                Not a helpful suggestion
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-image">
+                    <img src="https://via.placeholder.com/20" alt="Card">
+                </div>
+                <div class="card-description">Sachin saini</div>
+            </button>
+        </div>
+        <div class="bottom-card-content">
+            <button class="btn btn-secondary1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="material-symbols-outlined">add_notes</span>
+                <div class="card-title">auth 2.0</div>
+                <div class="dropdown">
+                    <a class="more_arrow" data-bs-toggle="dropdown" aria-expanded="false" title="View Details">
+                        <span class="material-icons-outlined pointer">more_vert</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#open_with"
+                                title="Edit Application">
+                                <span class="material-icons-outlined">open_with</span>
+                                Open with
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#download">
+                                <span class="material-icons-outlined">download</span>
+                                Download
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#share">
+                                <span class="material-icons-outlined">share</span>
+                                Share
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                <span class="material-icons-outlined">folder_open</span>
+                                Organize
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                <span class="material-icons-outlined">info</span>
+                                Folder Information
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                <span class="material-icons-outlined">delete</span>
+                                Remove
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                <span class="material-icons-outlined">report</span>
+                                Report or block
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                <span class="material-icons-outlined">thumb_down</span>
+                                Not a helpful suggestion
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-image">
+                    <img src="https://via.placeholder.com/20" alt="Card">
+                </div>
+                <div class="card-description">Dhruv</div>
+            </button>
+        </div>
+        <div class="bottom-card-content">
+            <button class="btn btn-secondary1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="material-symbols-outlined">apk_document</span>
+                <div class="card-title">auth 2.0</div>
+                <div class="dropdown">
+                    <a class="more_arrow" data-bs-toggle="dropdown" aria-expanded="false" title="View Details">
+                        <span class="material-icons-outlined pointer">more_vert</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#open_with"
+                                title="Edit Application">
+                                <span class="material-icons-outlined">open_with</span>
+                                Open with
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#download">
+                                <span class="material-icons-outlined">download</span>
+                                Download
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#share">
+                                <span class="material-icons-outlined">share</span>
+                                Share
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                <span class="material-icons-outlined">folder_open</span>
+                                Organize
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                <span class="material-icons-outlined">info</span>
+                                Folder Information
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                <span class="material-icons-outlined">delete</span>
+                                Remove
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                <span class="material-icons-outlined">report</span>
+                                Report or block
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item pointer" data-bs-toggle="modal" data-bs-target="#deactivate_popup">
+                                <span class="material-icons-outlined">thumb_down</span>
+                                Not a helpful suggestion
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-image">
+                    <img src="https://via.placeholder.com/20" alt="Card">
+                </div>
+                <div class="card-description">me</div>
+            </button>
+        </div>
+    </div>
+</div>
