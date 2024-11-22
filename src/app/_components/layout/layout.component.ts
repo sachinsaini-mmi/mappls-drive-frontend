@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 import { AppConstants } from '../../_constants/app.constants';
 
 @Component({
   selector: 'app-layout',
   standalone: true,
-  imports: [],
+  imports: [RouterOutlet],
   templateUrl: './layout.component.html',
   styleUrl: './layout.component.css'
 })

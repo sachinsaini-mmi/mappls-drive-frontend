@@ -1,76 +1,78 @@
-<!-- Header -->
-<div class="header">
-    <div class="logo">
-        <span class="material-symbols-outlined">Storage</span>
-        <h1 class="headerTitle">Mappls Drive</h1>
-    </div>
-    <div class="search-container">
-        <div class="search-bar-wrapper">
-            <span class="material-symbols-outlined search-icon">search</span>
-            <input type="text" class="search-bar" placeholder="Search in Drive">
-            <span class="material-symbols-outlined tune-icon">tune</span>
+<div class="m">
+    <div class="hr">
+        <div class="hi">
+            <img src="../../../assets/images/gd.png" alt="drive">
+            <span class="hd2">Drive</span>
         </div>
-    </div>
-    <div class="right-section">
-        <span class="material-symbols-outlined apps">apps</span>
-        <div class="profileImg">
+        <div class="ms">
+            <div class="ib">
+                <span class="material-symbols-outlined si-ic">search</span>
+                <input type="text" class="isb" placeholder="Search in Drive">
+                <span class="material-symbols-outlined tn-ic">tune</span>
+            </div>
+        </div>
+        <div class="ls">
+            <span class="material-symbols-outlined">help</span>
+            <span class="material-symbols-outlined">settings</span>
+            <span class="material-symbols-outlined">apps</span>
             <img src="../../../assets/images/profile.png" alt="profile">
         </div>
     </div>
-</div>
-
-<!-- Sidebar -->
-<div class="sidebar">
-    <div class="addBttn" jscontroller="xKepo">
-        <div class="a-ec-Gd a-ec-Gd-Cs-mp-S">
-            <button type="button" class="brbsPe Ss7qXc a-qb-d">
-                <span>
-                    <span class="a-ec-Gd-zc-c"><svg class="Q6yead QJZfhe " width="24" height="24" viewBox="0 0 24 24" focusable="false"><path d="M20 13h-7v7h-2v-7H4v-2h7V4h2v7h7v2z"></path></svg></span>
-                </span>
-                <span class="jYPt8c">New</span>
-            </button>
+    <div class="mc">
+        <div class="sb">
+            <div class="nb">
+                <button class="bt">
+                    <div class="bti"><span class="material-symbols-outlined">add</span></div>
+                    <div class="btt">New</div>
+                </button>
+            </div>
+            <div class="mbr">
+                <ul class="sbm">
+                    <li class="mg">
+                        <ul>
+                            <li class="mi" (click)="navigateToHome();">
+                                <span class="material-symbols-outlined">home</span>
+                                Home
+                            </li>
+                            <li class="mi" (click)="navigateToMyDrive();">
+                                <span class="material-symbols-outlined">folder</span>
+                                My Drive
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mg">
+                        <ul>
+                            <li class="mi" (click)="navigateToSharedWithMe();">
+                                <span class="material-symbols-outlined">folder</span>
+                                Shared With Me
+                            </li>
+                            <li class="mi" (click)="navigateToRecent();">
+                                <span class="material-symbols-outlined">schedule</span>
+                                Recent
+                            </li>
+                            <li class="mi" (click)="navigateToStarred();">
+                                <span class="material-symbols-outlined">star</span>
+                                Starred
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mg">
+                        <ul>
+                            <li class="mi" (click)="navigateToTrash();">
+                                <span class="material-symbols-outlined">delete</span>
+                                Trash
+                            </li>
+                            <li class="mi" (click)="navigateToStorage();">
+                                <span class="material-symbols-outlined">cloud</span>
+                                Storage
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bd">
+            <router-outlet></router-outlet>
         </div>
     </div>
-    <ul class="sidebar-menu">
-        <li class="menu-group">
-            <ul>
-                <li class="menu-item" (click)="navigateToHome();">
-                    <span class="material-symbols-outlined">home</span>
-                    Home
-                </li>
-                <li class="menu-item" (click)="navigateToMyDrive();">
-                    <span class="material-symbols-outlined">folder</span>
-                    My Drive
-                </li>
-            </ul>
-        </li>
-        <li class="menu-group">
-            <ul>
-                <li class="menu-item" (click)="navigateToSharedWithMe();">
-                    <span class="material-symbols-outlined">folder</span>
-                    Shared With Me
-                </li>
-                <li class="menu-item" (click)="navigateToRecent();">
-                    <span class="material-symbols-outlined">schedule</span>
-                    Recent
-                </li>
-                <li class="menu-item" (click)="navigateToStarred();">
-                    <span class="material-symbols-outlined">star</span>
-                    Starred
-                </li>
-            </ul>
-        </li>
-        <li class="menu-group">
-            <ul>
-                <li class="menu-item" (click)="navigateToTrash();">
-                    <span class="material-symbols-outlined">delete</span>
-                    Trash
-                </li>
-                <li class="menu-item" (click)="navigateToStorage();">
-                    <span class="material-symbols-outlined">cloud</span>
-                    Storage
-                </li>
-            </ul>
-        </li>
-    </ul>
 </div>
